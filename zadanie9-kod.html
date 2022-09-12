@@ -1,0 +1,57 @@
+<html>
+
+	<head>
+		<title></title>
+
+	</head>
+	
+	<body>
+		<textarea cols="150" rows="46"> 
+<html>
+	<body>
+	
+		<div style="color:green;font-size:46px;">
+			<script language="JavaScript">
+				//Nadawanie zmiennych
+				var D1=prompt("Dzień1=","");
+				var G1=prompt("Godzina1=","");
+				var D2=prompt("Dzień2=","");
+				var G2=prompt("Godzina2=","");
+				var roznica;
+				var a=parseFloat(D1);
+				var b=parseFloat(D2);
+				var c=parseFloat(G1);
+				var d=parseFloat(G2);
+				var sumaAC;
+				var sumaBD;
+				
+				//przeliczanie na sekundy
+				a*=86400;
+				b*=86400;
+				c*=3600;
+				d*=3600;
+				
+				//obliczanie sekund dnia+godziny
+				sumaAC=a+c;
+				sumaBD=b+d;
+				
+				//obliczanie roznicy
+				roznica=sumaAC-sumaBD;
+				
+				//wypisywanie danych
+				document.write("Ilość sekund D1="+D1+" * 86400 = "+a+"<br>");
+				document.write("Ilość sekund G1="+G1+" * 3600 = "+c+"<br>");
+				document.write("Ilość sekund D2="+D2+" * 86400 = "+b+"<br>");
+				document.write("Ilość sekund G2="+G2+" * 3600 = "+d+"<br>");
+				document.write("Dzień1="+a+" + "+c+" = "+sumaAC+"<br>");
+				document.write("Dzień="+b+" + "+d+" = "+sumaBD+"<br>");
+				document.write("Róznica="+sumaAC+" - "+sumaBD+" = "+roznica+"<br>");
+			</script>
+		</div>
+	</body>
+</html>
+
+		</textarea>
+	</body>
+	
+</html>

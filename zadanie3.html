@@ -1,0 +1,49 @@
+<html>
+
+	<head>
+		<title></title>
+		
+		<script language="JavaScript">
+			const tx = document.getElementsByTagName("textarea");
+			for (let i = 0; i < tx.length; i++) {
+			  tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
+			  tx[i].addEventListener("input", OnInput, false);
+			}
+
+			function OnInput() {
+			  this.style.height = 0;
+			  this.style.height = (this.scrollHeight) + "px";
+			}
+		</script>
+	</head>
+	
+	<body>
+		<p>
+			Rodzaje okienek: <br />
+			-Okienko alert – wyświetlająca okienko dialogowe z informacją i przyciskiem OK, <br />
+			-Okienko prompt – generująca okno, w którym użytkownik może wpisać wartość, zwracaną następnie do programu. <br />
+			-Okienko confirm służy do tego, aby użytkownik coś potwierdził (stąd nazwa confirm). <br />
+		</p>
+		<p>
+			-parseFloat(zmienna) - konwersja zmiennej do typu float <br />
+			-parseInt(zmienna) - konwersja zmiennej do typu int (liczbowego) <br />
+			-toString(zmienna) - konwersja zmiennej do typu łańcuchowego
+		</p>
+		<p>
+			-String -> Typ tekstowy <br />
+			-Boolea -> Typ logiczny <br />
+			-Null -> Pusta zawartość <br />
+			-Undefined -> Typ niezidentyfikowany <br />
+			-Object -> Obiekt
+		</p>
+		<p>
+			1. Nazwa zmiennej musi się zaczynać od litery, znaku "$" lub "_", może zawierać tylko litery (bez polskich znaków), cyfry oraz "$" i "_".<br />
+				Poprawne nazwy zmiennych: zmienna1, $wynik, _rozmiar, wynik1, Rekord, $_gracz<br />
+				Błędne nazwy zmiennych: 1zmienna, wynik gry, wysokosc&szerokosc, wynik.rekord, &gracz, wysokość, imie+nazwisko.<br />
+			2. Wielkość liter ma znaczenie.<br />
+				Rekord i rekord to dwie różne zmienne! Jest to bardzo częsta przyczyna błędów w kodzie początkujących programistów.<br />
+			3. Należy nie używać słów kluczowych JavaScript jako nazw zmiennych.
+		</p>
+	</body>
+	
+</html>
