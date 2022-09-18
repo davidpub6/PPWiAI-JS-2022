@@ -1,0 +1,36 @@
+<html>
+
+	<head>
+		<title></title>
+
+	</head>
+	
+	<body>
+		<textarea cols="150" rows="46"> 
+function zd13_pob()
+	{
+	//Nadawanie zmiennych
+	var A_pob=prompt("A=","");
+	var B_pob=prompt("B=","");
+	var a_pob, b_pob, c_pob, d1_pob, d2_pob, d3_pob, d4_pob;
+	var a_pob=parseInt(A_pob);
+	var b_pob=parseInt(B_pob);
+	
+	//Obliczenia
+	c_pob = a_pob + b_pob;
+	d1_pob=Math.pow(a_pob,c_pob);
+	d2_pob=c_pob*(Math.pow(a_pob,b_pob)*b_pob);
+	d3_pob=c_pob*(a_pob*Math.pow(b_pob,b_pob));
+	d4_pob=Math.pow(b_pob,c_pob);
+	r_pob=d1_pob+d2_pob+d3_pob+d4_pob;
+
+	//wypisywanie danych
+	document.write("Wczytane liczby:     A="+a_pob+"   B="+b_pob+"<br>")
+	document.write("<p style=\"color: #000080; font-size: 3vw;\">"+"("+a_pob+" + "+b_pob+")^"+c_pob+"= "+a_pob+"^"+
+	c_pob+" + "+c_pob+"*(("+a_pob+")^"+b_pob+")*("+b_pob+") + "+c_pob+"*("+a_pob+")*(("+b_pob+")^"+b_pob+") + "+b_pob+"^"+
+	c_pob+" = "+d1_pob+" + "+d2_pob+" + "+d3_pob+" + "+d4_pob+" = "+r_pob)
+	}
+		</textarea>
+	</body>
+	
+</html>

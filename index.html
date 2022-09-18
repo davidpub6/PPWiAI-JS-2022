@@ -5,61 +5,118 @@
 		<script type="text/javascript">
 		
 			//Zadania
-			
-			function WinOpen_z1()
+			function WinOpen_pob(src)
 				{
-				window.open("zadanie1.html","okienko","toolbar=no,directories=no,menubar=no,height=9999999,width=99999999,top=0,left=0");
+				window.open(src,"okienko","toolbar=no,directories=no,menubar=no,height=9999999,width=99999999,top=0,left=0");
 				}
-			function WinOpen_z2()
+			function zd4_pob() { alert("Uwaga!"); }
+			function zd5_pob()
 				{
-				window.open("zadanie2.html","okienko","toolbar=no,directories=no,menubar=no,height=9999999,width=99999999,top=0,left=0");
+				var r=confirm("Naciśnij klawisz");
+				if (r==true)
+					{ document.write("Nacisnąłeś OK!"); }
+				else
+					{ document.write("Nacisnąłeś Cancel!"); }
 				}
-			function WinOpen_z3()
+			function zd6_pob()
 				{
-				window.open("zadanie3.html","okienko","toolbar=no,directories=no,menubar=no,height=9999999,width=99999999,top=0,left=0");
+				var name=prompt("Napisz imię","Imię Nazwisko");
+				if (name!=null && name!="")
+					{
+					document.write("Witaj " + name + "! jak się masz?");
+					}
 				}
-			function WinOpen_z4()
+			function zd7_pob()
 				{
-				window.open("zadanie4.html","okienko","toolbar=no,directories=no,menubar=no,height=9999999,width=99999999,top=0,left=0");
+				var liczba1=prompt("liczba1=","");
+				var liczba2=prompt("liczba2=","");
+				var suma;
+				var a=parseFloat(liczba1);
+				var b=parseFloat(liczba2);
+				suma=a+b;
+				document.write("suma="+a+" + "+b+" = "+suma+"<br>");
 				}
-			function WinOpen_z5()
+			function zd8_pob()
 				{
-				window.open("zadanie5.html","okienko","toolbar=no,directories=no,menubar=no,height=9999999,width=99999999,top=0,left=0");
-				}
-			function WinOpen_z6()
-				{
-				window.open("zadanie6.html","okienko","toolbar=no,directories=no,menubar=no,height=9999999,width=99999999,top=0,left=0");
-				}
-			function WinOpen_z7()
-				{
-				window.open("zadanie7.html","okienko","toolbar=no,directories=no,menubar=no,height=9999999,width=99999999,top=0,left=0");
-				}
-			function WinOpen_z8()
-				{
-				window.open("zadanie8.html","okienko","toolbar=no,directories=no,menubar=no,height=9999999,width=99999999,top=0,left=0");
-				}
-			function WinOpen_z9()
-				{
-				window.open("zadanie9.html","okienko","toolbar=no,directories=no,menubar=no,height=9999999,width=99999999,top=0,left=0");
-				}
+				var D1=prompt("Dzień1=","");
+				var D2=prompt("Dzień2=","");
+				var roznica;
+				var a=parseFloat(D1);
+				var b=parseFloat(D2);
 				
-			//Kody
-			
-			function WinOpen_z1_kod()
-				{
-				window.open("zadanie1-kod.html","okienko","toolbar=no,directories=no,menubar=no,height=9999999,width=99999999,top=0,left=0");
+				roznica=a-b;
+				
+				document.write("<h1 style=\"color:green; font-size:46;\">"+"roznica="+a+" - "+b+" = "+roznica+"<br>");
+				document.write("<h1 style=\"color:green; font-size:46;\">"+roznica+" * "+"86400"+" = "+(roznica*86400)+"<br>");
 				}
-			function WinOpen_z2_kod()
+			function zd10_pob()
 				{
-				window.open("zadanie2-kod.html","okienko","toolbar=no,directories=no,menubar=no,height=9999999,width=99999999,top=0,left=0");
+				//Nadawanie zmiennych
+				var m_pob=prompt("m=","");
+				var m1_pob, m2_pob;
+				
+				//Obliczenia
+				m1_pob = m_pob;
+				m1_pob= ++m1_pob;
+				m2_pob = m_pob * m1_pob;
+				
+				//wypisywanie danych
+				document.write("1/m = "+"1/"+m_pob+" = "+"1/"+m1_pob+" + "+"1/"+m2_pob+"<br>");
 				}
-			function WinOpen_z8_kod()
+			function zd11_pob()
 				{
-				window.open("zadanie8-kod.html","okienko","toolbar=no,directories=no,menubar=no,height=9999999,width=99999999,top=0,left=0");
+				//Nadawanie zmiennych
+				var m_pob=prompt("m=","");
+				var m1_pob, m2_pob, m3_pob, m4_pob;
+				var m_pob=parseInt(m_pob);
+				
+				//Obliczenia
+				m1_pob= m_pob + 1;
+				m2_pob= m_pob + 2;
+				m3_pob = m1_pob * m2_pob;
+				m4_pob = m_pob * m1_pob;
+				
+				
+				//wypisywanie danych
+				
+				document.write("1/m = "+"1/"+m_pob+" = "+"1/"+m1_pob+" + "+"1/"+m4_pob+"<br>")
+				document.write("1/m = "+"1/"+m_pob+" = "+"1/"+m2_pob+" + "+"1/"+m3_pob+" + "+"1/"+m4_pob+"<br>")
 				}
-			function WinOpen_z9_kod()
+			function zd12_pob()
 				{
-				window.open("zadanie9-kod.html","okienko","toolbar=no,directories=no,menubar=no,height=9999999,width=99999999,top=0,left=0");
+				//Nadawanie zmiennych
+				var m_pob=prompt("m=","");
+				var m1_pob;
+				var m_pob=parseInt(m_pob);
+				
+				//Obliczenia
+				m1_pob= m_pob * 2;
+
+				//wypisywanie danych
+				document.write("1/m = "+"1/"+m_pob+" = "+"1/"+m1_pob+" + "+"1/"+m1_pob+"<br>")
+				}
+			function zd13_pob()
+				{
+				//Nadawanie zmiennych
+				var A_pob=prompt("A=","");
+				var B_pob=prompt("B=","");
+				var a_pob, b_pob, c_pob, d1_pob, d2_pob, d3_pob, d4_pob;
+				var a_pob=parseInt(A_pob);
+				var b_pob=parseInt(B_pob);
+				
+				//Obliczenia
+				c_pob = a_pob + b_pob;
+				d1_pob=Math.pow(a_pob,c_pob);
+				d2_pob=c_pob*(Math.pow(a_pob,b_pob)*b_pob);
+				d3_pob=c_pob*(a_pob*Math.pow(b_pob,b_pob));
+				d4_pob=Math.pow(b_pob,c_pob);
+				r_pob=d1_pob+d2_pob+d3_pob+d4_pob;
+
+				//wypisywanie danych
+				document.write("Wczytane liczby:     A="+a_pob+"   B="+b_pob+"<br>")
+				document.write("<p style=\"color: #000080; font-size: 3vw;\">"+"("+a_pob+" + "+b_pob+")^"+c_pob+"= "+
+				a_pob+"^"+c_pob+" + "+c_pob+"*(("+a_pob+")^"+b_pob+")*("+b_pob+") + "+c_pob+"*("+a_pob+")*(("+b_pob+")^"+
+				b_pob+") + "+b_pob+"^"+c_pob+" = "+d1_pob+" + "+d2_pob+" + "+d3_pob+" + "+d4_pob+" = "+r_pob)
 				}
 		</script>
 	</head>
@@ -69,24 +126,32 @@
 		
 		<!-- Zadania -->
 		
-		<input type="button" value="Pobłocki-Zadanie 1" onclick="WinOpen_z1()" />
-		<input type="button" value="Pobłocki-Zadanie 2" onclick="WinOpen_z2()" />
-		<input type="button" value="Pobłocki-Zadanie 3" onclick="WinOpen_z3()" />
-		<input type="button" value="Pobłocki-Zadanie 4" onclick="WinOpen_z4()" />
-		<input type="button" value="Pobłocki-Zadanie 5" onclick="WinOpen_z5()" />
-		<input type="button" value="Pobłocki-Zadanie 6" onclick="WinOpen_z6()" />
-		<input type="button" value="Pobłocki-Zadanie 7" onclick="WinOpen_z7()" />
-		<input type="button" value="Pobłocki-Zadanie 8" onclick="WinOpen_z8()" />
-		<input type="button" value="Pobłocki-Zadanie 9" onclick="WinOpen_z9()" />
+		<input type="button" value="Pobłocki-Zadanie 1" onclick="WinOpen_pob('zadanie1.html')" />
+		<input type="button" value="Pobłocki-Zadanie 2" onclick="WinOpen_pob('zadanie2.html')" />
+		<input type="button" value="Pobłocki-Zadanie 3" onclick="WinOpen_pob('zadanie3.html')" />
+		<input type="button" value="Pobłocki-Zadanie 4" onclick="zd4_pob()" />
+		<input type="button" value="Pobłocki-Zadanie 5" onclick="zd5_pob()" />
+		<input type="button" value="Pobłocki-Zadanie 6" onclick="zd6_pob()" />
+		<input type="button" value="Pobłocki-Zadanie 7" onclick="zd7_pob()" />
+		<input type="button" value="Pobłocki-Zadanie 8" onclick="zd8_pob()" />
+		<input type="button" value="Pobłocki-Zadanie 9" onclick="WinOpen_pob('zadanie9.html')" />
+		<input type="button" value="Pobłocki-Zadanie 10" onclick="zd10_pob()" />
+		<input type="button" value="Pobłocki-Zadanie 11" onclick="zd11_pob()" />
+		<input type="button" value="Pobłocki-Zadanie 12" onclick="zd12_pob()" />
+		<input type="button" value="Pobłocki-Zadanie 13" onclick="zd13_pob()" />
 		
 		<br />
 		<!-- Kody -->
 		<br />
 		
-		<input type="button" value="Pobłocki-Kod 1" onclick="WinOpen_z1_kod()" />
-		<input type="button" value="Pobłocki-Kod 2" onclick="WinOpen_z2_kod()" />
-		<input type="button" value="Pobłocki-Kod 8" onclick="WinOpen_z8_kod()" />
-		<input type="button" value="Pobłocki-Kod 9" onclick="WinOpen_z9_kod()" />
+		<input type="button" value="Pobłocki-Kod 1" onclick="WinOpen_pob('zadanie1-kod.html')" />
+		<input type="button" value="Pobłocki-Kod 2" onclick="WinOpen_pob('zadanie2-kod.html')" />
+		<input type="button" value="Pobłocki-Kod 8" onclick="WinOpen_pob('zadanie8-kod.html')" />
+		<input type="button" value="Pobłocki-Kod 9" onclick="WinOpen_pob('zadanie9-kod.html')" />
+		<input type="button" value="Pobłocki-Kod 10" onclick="WinOpen_pob('zadanie10-kod.html')" />
+		<input type="button" value="Pobłocki-Kod 11" onclick="WinOpen_pob('zadanie11-kod.html')" />
+		<input type="button" value="Pobłocki-Kod 12" onclick="WinOpen_pob('zadanie12-kod.html')" />
+		<input type="button" value="Pobłocki-Kod 13" onclick="WinOpen_pob('zadanie13-kod.html')" />
 		
 	</body>
 	
