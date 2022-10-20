@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>
+		Obliczanie Dlugosci i Kata
+		</title>
+		<script language="JavaScript">
+			function dlugosc_poblocki(D_pob,X_pob) {
+					a_dana_pob = parseFloat(D_pob);
+					b_dana_pob = parseFloat(X_pob);
+					dlu_wynik_pob = Math.sqrt(Math.pow(a_dana_pob, 2) + Math.pow(b_dana_pob, 2));
+					
+					document.getElementsByName('dlugosc_pob')[0].value=dlu_wynik_pob.toFixed(2); /* na dokument */
+					alert("dlugosc_pob="+dlu_wynik_pob.toFixed(2)); /*do okna Alert */
+					wyprowadz_dlugosc_pob.innerHTML="dlugosc_pob="+dlu_wynik_pob.toFixed(2)+"<br>"; /* do tabeli */
+					}
+					
+			function kat_poblocki(D_pob,X_pob) {
+					a_dana_pob = parseFloat(D_pob);
+					b_dana_pob = parseFloat(X_pob);
+					kat_wynik_pob = Math.atan(a_dana_pob/b_dana_pob)*(180/Math.PI);
+					
+					document.getElementsByName('kat_pob')[0].value=kat_wynik_pob.toFixed(2);
+					alert("kat_pob="+kat_wynik_pob.toFixed(2));
+					wyprowadz_kat_pob.innerHTML="kat_pob="+kat_wynik_pob.toFixed(2);
+					}
+		</script>
+	</head>
+	
+	<body>
+		Obliczanie Pola i obwodu
+		<br> <br>
+		<form name="formularz" action="..." onsubmit="dlugosc_poblocki(this.D_pob.value,this.X_pob.value); kat_poblocki(this.D_pob.value,this.X_pob.value);return false">
+			Podaj wysokosc=
+			<input size="6" name="D_pob">
+			Podaj odleglosc=
+			<input size="6" name="X_pob">
+			<br> <br>
+			<input TYPE="submit" Value="oblicz" >
+			<br> <br>
+			Dlugosc=
+			<input size="6" name="dlugosc_pob">
+			Kat nachylenia=
+			<input size="6" name="kat_pob">
+		</form>
+		<table>
+			<tr id="wyprowadz_dlugosc_pob"></tr>
+			<tr id="wyprowadz_kat_pob"></tr>
+		</table>
+	</body>
+</html>

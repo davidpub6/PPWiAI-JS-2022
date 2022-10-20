@@ -9,7 +9,9 @@
 				{
 				window.open(src,"okienko","toolbar=no,directories=no,menubar=no,height=9999999,width=99999999,top=0,left=0");
 				}
+				
 			function zd4_pob() { alert("Uwaga!"); }
+			
 			function zd5_pob()
 				{
 				var r=confirm("Naciśnij klawisz");
@@ -18,6 +20,7 @@
 				else
 					{ document.write("Nacisnąłeś Cancel!"); }
 				}
+				
 			function zd6_pob()
 				{
 				var name=prompt("Napisz imię","Imię Nazwisko");
@@ -26,6 +29,7 @@
 					document.write("Witaj " + name + "! jak się masz?");
 					}
 				}
+				
 			function zd7_pob()
 				{
 				var liczba1=prompt("liczba1=","");
@@ -36,6 +40,7 @@
 				suma=a+b;
 				document.write("suma="+a+" + "+b+" = "+suma+"<br>");
 				}
+				
 			function zd8_pob()
 				{
 				var D1=prompt("Dzień1=","");
@@ -49,6 +54,7 @@
 				document.write("<h1 style=\"color:green; font-size:46;\">"+"roznica="+a+" - "+b+" = "+roznica+"<br>");
 				document.write("<h1 style=\"color:green; font-size:46;\">"+roznica+" * "+"86400"+" = "+(roznica*86400)+"<br>");
 				}
+				
 			function zd10_pob()
 				{
 				//Nadawanie zmiennych
@@ -63,6 +69,7 @@
 				//wypisywanie danych
 				document.write("1/m = "+"1/"+m_pob+" = "+"1/"+m1_pob+" + "+"1/"+m2_pob+"<br>");
 				}
+				
 			function zd11_pob()
 				{
 				//Nadawanie zmiennych
@@ -82,6 +89,7 @@
 				document.write("1/m = "+"1/"+m_pob+" = "+"1/"+m1_pob+" + "+"1/"+m4_pob+"<br>")
 				document.write("1/m = "+"1/"+m_pob+" = "+"1/"+m2_pob+" + "+"1/"+m3_pob+" + "+"1/"+m4_pob+"<br>")
 				}
+				
 			function zd12_pob()
 				{
 				//Nadawanie zmiennych
@@ -95,6 +103,7 @@
 				//wypisywanie danych
 				document.write("1/m = "+"1/"+m_pob+" = "+"1/"+m1_pob+" + "+"1/"+m1_pob+"<br>")
 				}
+				
 			function zd13_pob()
 				{
 				//Nadawanie zmiennych
@@ -118,6 +127,130 @@
 				a_pob+"^"+c_pob+" + "+c_pob+"*(("+a_pob+")^"+b_pob+")*("+b_pob+") + "+c_pob+"*("+a_pob+")*(("+b_pob+")^"+
 				b_pob+") + "+b_pob+"^"+c_pob+" = "+d1_pob+" + "+d2_pob+" + "+d3_pob+" + "+d4_pob+" = "+r_pob)
 				}
+				
+			function zd14a_pob()
+				{
+				//zmienne
+				var a_pob, sina, cosa, tga, ctga;
+				var b_pob=prompt("b=","");
+				var c_pob=prompt("c=","");
+				var b_pob=parseInt(b_pob);
+				var c_pob=parseInt(c_pob);
+				
+				
+				//obliczenia
+				a_pob=(Math.pow(b_pob,2))-(Math.pow(c_pob,2));
+				a_pob=Math.abs(a_pob);
+				a_pob=(Math.sqrt(a_pob));
+				
+				sina=a_pob/c_pob;
+				cosa=b_pob/c_pob;
+				tga=a_pob/b_pob;
+				ctga=b_pob/a_pob;
+			
+				//wypis
+				document.write("a_pob= "+a_pob+"<br>");
+				document.write("b_pob= "+b_pob+"<br>");
+				document.write("c_pob= "+c_pob+"<br>");
+				
+				document.write("sin(alfa) = a/c = "+a_pob.toFixed(2)+"/"+c_pob.toFixed(2)+" = "+sina.toFixed(2)+"<br>");
+				document.write("cos(alfa) = b/c = "+b_pob.toFixed(2)+"/"+c_pob.toFixed(2)+" = "+cosa.toFixed(2)+"<br>");
+				document.write("tg(alfa) = a/b = "+a_pob.toFixed(2)+"/"+b_pob.toFixed(2)+" = "+tga.toFixed(2)+"<br>");
+				document.write("ctg(alfa) = b/a = "+b_pob.toFixed(2)+"/"+a_pob.toFixed(2)+" = "+ctga.toFixed(2)+"<br>");
+				}
+			function zd17_pob()
+				{
+				//zmienne
+				var a=parseFloat(prompt("a=",""));
+				var b=parseFloat(prompt("b=",""));
+				
+				//funkcje
+				function suma_pob(a, b) 
+					{
+					return a + b;
+					}
+					
+				function odejmowanie_pob(a, b) 
+					{
+					return a - b;
+					}
+					
+				function mnozenie_pob(a, b) 
+					{
+					return a * b;
+					}
+					
+				function od_kwadratu_pob(a, b) 
+					{
+					return Math.pow(a,2);
+					return Math.pow(b,2);
+					}
+					
+				function reszta_z_dzielenia_a_przez_b_pob(a, b) 
+					{
+					return a % b;
+					}
+				
+				//wypis
+				document.write("<div style=\"color:navy;font-size:50px;\">"+"suma="+suma_pob(a,b)+"<br>" +
+								"roznica="+odejmowanie_pob(a,b)+"<br>" +
+								"iloczyn="+mnozenie_pob(a,b)+"<br>" +
+								"kwadrat="+od_kwadratu_pob(a)+", "+od_kwadratu_pob(b)+"<br>" +
+								"reszta="+reszta_z_dzielenia_a_przez_b_pob(a,b)+"<br>"+"</div>");
+				}
+			function zd21a_pob ()
+				{
+				var b_pob=parseFloat(prompt("bok b=",""));
+				var c_pob=parseFloat(prompt("bok c=",""));
+				
+				var a_pob=Math.sqrt((Math.pow(c_pob,2))-(Math.pow(b_pob,2)));
+				var pole_pob=(a_pob*b_pob)/2;
+				var h3_pob=(a_pob*b_pob)/c_pob;
+				
+				var sin_alfa_pob=a_pob/c_pob;
+				var cos_alfa_pob=b_pob/c_pob;
+				var tg_alfa_pob=a_pob/b_pob;
+				var ctg_alfa_pob=b_pob/a_pob;
+				
+				var Alfa_pob= Math.asin(a_pob/c_pob)*180/Math.PI;
+				var Beta_pob=90-Alfa_pob;
+				var Gamma_pob=90;
+				
+				document.write("bok a ="+a_pob.toFixed(3)+"cm<br>");
+				document.write("bok b ="+b_pob.toFixed(3)+"cm<br>");
+				document.write("bok c ="+c_pob.toFixed(3)+"cm<br>");
+				document.write("<br>");
+				document.write("Pole ="+pole_pob.toFixed(3)+"^cm2<br>");
+				document.write("<br>");
+				document.write("Wysokosc h1 ="+a_pob.toFixed(3)+"cm<br>");
+				document.write("Wysokosc h2 ="+b_pob.toFixed(3)+"cm<br>");
+				document.write("Wysokosc h3 ="+h3_pob.toFixed(3)+"cm<br>");
+				document.write("<br>");
+				document.write("Sin alfa ="+sin_alfa_pob.toFixed(3)+"<br>");
+				document.write("Cos alfa ="+cos_alfa_pob.toFixed(3)+"<br>");
+				document.write("Tg alfa ="+tg_alfa_pob.toFixed(3)+"<br>");
+				document.write("Ctg alfa ="+ctg_alfa_pob.toFixed(3)+"<br>");
+				document.write("<br>");
+				document.write("Kat Alfa="+Alfa_pob.toFixed(3)+"° <br>");
+				document.write("Kat Beta ="+Beta_pob.toFixed(3)+"° <br>");
+				document.write("Kat Gamma ="+Gamma_pob.toFixed(3)+"° <br>");
+				}
+				
+			function zd14_pob (){
+				var No = parseFloat(prompt("Podaj początkową ilość atomów pierwisatka : ",""));
+				var t = parseFloat(prompt("Podaj czas w latach : ",""));
+				var T12 = parseFloat(prompt("Podaj czas połowicznego zaniku : ",""));
+				
+				var lambda = parseFloat(No/T12);
+				var N = parseFloat(No-(t*lambda));
+				
+				document.write("<div style=\"color:navy;font-size:50px;\">"+
+								"No = "+No.toFixed(2)+"[sztuk]<br>"+
+								"t = "+t.toFixed(2)+"[lat]<br>"+
+								"T1/2 = "+T12.toFixed(2)+"[lat]<br>"+
+								"Lambda = "+lambda.toFixed(7)+"[/rok]<br>"+
+								"N = "+N.toFixed(7)+"[sztuk]<br>"+"</div>");
+			}
 		</script>
 	</head>
 	
@@ -139,7 +272,13 @@
 		<input type="button" value="Pobłocki-Zadanie 11" onclick="zd11_pob()" />
 		<input type="button" value="Pobłocki-Zadanie 12" onclick="zd12_pob()" />
 		<input type="button" value="Pobłocki-Zadanie 13" onclick="zd13_pob()" />
-		
+		<input type="button" value="Pobłocki-Zadanie 14a" onclick="zd14a_pob()" />
+		<input type="button" value="Pobłocki-Zadanie 17" onclick="zd17_pob()" />
+		<input type="button" value="Pobłocki-Zadanie 21a" onclick="zd21a_pob()" />
+		<input type="button" value="Pobłocki-Zadanie 19" onclick="WinOpen_pob('zadanie19.html')" />
+		<input type="button" value="Pobłocki-Zadanie 16" onclick="WinOpen_pob('zadanie16.html')" />
+		<input type="button" value="Pobłocki-Zadanie 21" onclick="WinOpen_pob('zadanie21.html')" />
+
 		<br />
 		<!-- Kody -->
 		<br />
@@ -152,6 +291,23 @@
 		<input type="button" value="Pobłocki-Kod 11" onclick="WinOpen_pob('zadanie11-kod.html')" />
 		<input type="button" value="Pobłocki-Kod 12" onclick="WinOpen_pob('zadanie12-kod.html')" />
 		<input type="button" value="Pobłocki-Kod 13" onclick="WinOpen_pob('zadanie13-kod.html')" />
+		<input type="button" value="Pobłocki-Kod 19" onclick="WinOpen_pob('zadanie19-kod.html')" />
+		
+		<br />
+		<!--Zadania dodatkowe(na cel)-->
+		<br />
+		
+		<input type="button" value="Pobłocki-Zadanie 14" onclick="zd14_pob()" />
+		<input type="button" value="Pobłocki-Zadanie 20" onclick="WinOpen_pob('zadanie20.html')" />
+		<input type="button" value="Pobłocki-Zadanie 22" onclick="WinOpen_pob('zadanie22.html')" />
+		
+		<br />
+		<!--Kody zadania dodatkowe-->
+		<br />
+		
+		<input type="button" value="Pobłocki-Kod 14" onclick="WinOpen_pob('zadanie14-kod.html')" />
+		<input type="button" value="Pobłocki-Kod 20" onclick="WinOpen_pob('zadanie20-kod.html')" />
+		<input type="button" value="Pobłocki-Kod 22" onclick="WinOpen_pob('zadanie22-kod.html')" />
 		
 	</body>
 	

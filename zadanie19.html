@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>
+		Obliczanie Pola i obwodu
+		</title>
+		<script language="JavaScript">
+			function pole_poblocki(a_pob,b_pob)
+				{
+				a_dana_pob=parseFloat(a_pob)
+				b_dana_pob=parseFloat(b_pob)
+				P_wynik_pob=a_dana_pob*b_dana_pob
+				
+				document.getElementsByName('pole')[0].value=P_wynik_pob.toFixed(2); /* na dokument */
+				alert("Pole="+P_wynik_pob.toFixed(2)+" cm^2"); /*do okna Alert */
+				wyprowadz_pole_pob.innerHTML="Pole="+P_wynik_pob.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
+				}
+				
+			function obwod_poblocki(a_pob,b_pob)
+				{
+				a_dana_pob=parseFloat(a_pob)
+				b_dana_pob=parseFloat(b_pob)
+				obw_wynik_pob=2*a_dana_pob+2*b_dana_pob
+				
+				document.getElementsByName('obwod')[0].value=obw_wynik_pob.toFixed(2);
+				alert("obwod="+obw_wynik_pob.toFixed(2));
+				wyprowadz_obwod_pob.innerHTML="obwod="+obw_wynik_pob.toFixed(2);
+				}
+		</script>
+	</head>
+	
+	<body>
+		Obliczanie Pola i obwodu
+		<br> <br>
+		<form name="formularz" action="..." onsubmit="pole_poblocki(this.a_pob.value,this.b_pob.value); obwod_poblocki(this.a_pob.value,this.b_pob.value);return false">
+			Podaj a=
+			<input size="6" name="a_pob">
+			Podaj b=
+			<input size="6" name="b_pob">
+			<br> <br>
+			<input TYPE="submit" Value="oblicz" >
+			<br> <br>
+			P=
+			<input size="6" name="pole">
+			obw=
+			<input size="6" name="obwod">
+		</form>
+		<table>
+			<tr id="wyprowadz_pole_pob"></tr>
+			<tr id="wyprowadz_obwod_pob"></tr>
+		</table>
+	</body>
+</html>

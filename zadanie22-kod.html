@@ -1,0 +1,69 @@
+<html>
+
+	<head>
+		<title></title>
+
+	</head>
+	
+	<body>
+		<textarea cols="150" rows="60"> 
+
+<html>
+	<head>
+		<title>
+		Obliczanie Wysokosci i Kata
+		</title>
+		<script language="JavaScript">
+			function wys_poblocki(odl_pob,s_pob)
+				{
+				a_dana_pob=parseFloat(odl_pob)
+				b_dana_pob=parseFloat(s_pob)
+				h_wynik_pob=Math.sqrt(Math.pow(b_dana_pob,2)-Math.pow(a_dana_pob,2))
+				
+				document.getElementsByName('wysokosc_pob')[0].value=h_wynik_pob.toFixed(2); /* na dokument */
+				alert("wysokosc_pob="+h_wynik_pob.toFixed(2)); /*do okna Alert */
+				wyprowadz_wysokosc_pob.innerHTML="wysokosc_pob="+h_wynik_pob.toFixed(2)+"<br>"; /* do tabeli */
+				}
+				
+			function kat_poblocki(odl_pob,s_pob)
+				{
+				a_dana_pob=parseFloat(odl_pob)
+				b_dana_pob=parseFloat(s_pob)
+				h_pob=Math.sqrt(Math.pow(b_dana_pob,2)-Math.pow(a_dana_pob,2))
+				kat_wynik_pob = Math.atan(h_pob/a_dana_pob)*(180/Math.PI);
+				
+				document.getElementsByName('kat_pob')[0].value=kat_wynik_pob.toFixed(2);
+				alert("kat_pob="+kat_wynik_pob.toFixed(2));
+				wyprowadz_kat_pob.innerHTML="kat_pob="+kat_wynik_pob.toFixed(2);
+				}
+		</script>
+	</head>
+	
+	<body>
+		Obliczanie Wysokosci i Kata
+		<br> <br>
+		<form name="formularz" action="..." onsubmit="wys_poblocki(this.odl_pob.value,this.s_pob.value); kat_poblocki(this.odl_pob.value,this.s_pob.value);return false">
+			Podaj odleglosc =
+			<input size="6" name="odl_pob">
+			
+			Podaj droge s =
+			<input size="6" name="s_pob">
+			
+			<br> <br>
+			<input TYPE="submit" Value="oblicz" >
+			<br> <br>
+			Wysokosc h =
+			<input size="6" name="wysokosc_pob">
+			kat =
+			<input size="6" name="kat_pob">
+		</form>
+		<table>
+			<tr id="wyprowadz_wysokosc_pob"></tr>
+			<tr id="wyprowadz_kat_pob"></tr>
+		</table>
+	</body>
+</html>
+
+		</textarea>
+	</body>
+</html>

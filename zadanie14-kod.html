@@ -1,0 +1,29 @@
+<html>
+
+	<head>
+		<title></title>
+
+	</head>
+	
+	<body>
+		<textarea cols="150" rows="26"> 
+
+function zd14_pob (){
+				var No = parseFloat(prompt("Podaj początkową ilość atomów pierwisatka : ",""));
+				var t = parseFloat(prompt("Podaj czas w latach : ",""));
+				var T12 = parseFloat(prompt("Podaj czas połowicznego zaniku : ",""));
+				
+				var lambda = parseFloat(No/T12);
+				var N = parseFloat(No-(t*lambda));
+				
+				document.write("<div style=\"color:navy;font-size:50px;\">"+
+								"No = "+No.toFixed(2)+"[sztuk]<br>"+
+								"t = "+t.toFixed(2)+"[lat]<br>"+
+								"T1/2 = "+T12.toFixed(2)+"[lat]<br>"+
+								"Lambda = "+lambda.toFixed(7)+"[/rok]<br>"+
+								"N = "+N.toFixed(7)+"[sztuk]<br>"+"</div>");
+			}
+
+		</textarea>
+	</body>
+</html>
