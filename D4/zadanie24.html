@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+	</head>
+	
+	<body>
+		<ol type="I">
+			<h1><li>Rodzaje „filozofii” programowania. </li></h1>
+			<ol type="1">
+				<li>Programowanie strukturalne</li>
+				<li>Programowanie obiektowe</li>
+			</ol>
+			<h1><li>Opisz paradygmat programowania strukturalnego. Założenia programowania strukturalnego. </li></h1>
+			
+				Programowanie strukturalne – paradygmat programowania opierający się na podziale kodu źródłowego programu na procedury i hierarchicznie ułożone bloki z wykorzystaniem struktur kontrolnych w postaci instrukcji wyboru i pętli. <br />
+				Programowanie strukturalne zwiększa czytelność i ułatwia analizę programów, co stanowi znaczącą poprawę w stosunku do trudnego w utrzymaniu „spaghetti code” często wynikającego z użycia instrukcji goto.<br />
+			
+			<h1><li>Programowanie obiektowe: definicja (angielski skrót, obiekty, stan, zachowanie, końcowa konkluzja czym jest programowanie obiektowe). </li></h1>
+			
+			Opis programowania obiektowego <br />
+
+			Programowanie obiektowe definicja:<br />
+			Programowanie obiektowe (ang. object-oriented programming) — sposób programowania, w którym programy definiuje się za pomocą: <br />
+			-obiektów (obiekty powoływane są do życia wirtualnego przez programistę, mogą być kasowane przez programistę) np. okienka w Windowsokienko jest obiektem.<br />
+			-obiekt ma jakiś stan (czyli dane, w programowaniu obiektowym nazywane najczęściej polami) np. wielość okienka w Windows. <br />
+			-obiekt wykazuje pewne zachowanie (czyli posiada pewne procedury w programowaniu obiektowym nazywane metody). Np. jest zdefiniowana metoda do zmiany wielkości okienka.<br />
+			<br />
+			Czyli obiektowy program komputerowy wyrażony jest jako zbiór takich obiektów, komunikujących się pomiędzy sobą w celu wykonywania zadań. <br />
+			<br />
+			Dlaczego stosujemy programowanie obiektowe: <br />
+			-Jest to bardziej naturalne podejście przez programistę podczas tworzenia programów ponieważ otaczający nas świat to różnego rodzaju przedmioty. Tworząc program komputerowy dokonujemy pewnego ich odwzorowania rzeczywistości np. definiujemy obiekt samochód. Definiujemy pola czyli jego stan np. rok produkcji, marka, kolor. Definiujemy również metody czyli co umie np. hamowanie, przyśpieszanie. Definicja obiektu jego metod i pól znajduje się w klasie. Następnie na podstawie zdefiniowanego obiektu (może mieć pola oraz metody) powołujemy obiekt w pamięci wirtualnej.<br />
+			-Programowanie obiektowe pozwala na lepsze gospodarowanie pamięciom komputera, ponieważ gdy obiekt staje się zbędny możemy go usunąć co zwolni pamięć zajmowaną przez ten obiekt. W programowaniu strukturalnym aby zwalniać pamięć konieczne było stosowanie dynamicznych struktur danych np. stos czy kolejka. <br />
+			-W programowaniu obiektowym dobrze napisana i przetestowana klasa pozwala na stosowaniu przez innych programistów. Zaoszczędza to czas i środki pieniężne.
+
+			<h1><li>Dlaczego stosujemy programowanie obiektowe? </li></h1>
+			
+			W przypadku programowania zorientowanego na obiekt (programowania obiektowego)
+			dokonuje się powiązania metod (funkcji programu) z danymi (zmiennymi) definiującymi przedmiot.
+			Wszystko to grupuje się w tzw. klasie zawierającej zarówno dane (pola) definiowanego przedmiotu,
+			jak i funkcje (metody). W ten sposób definicje przedmiotu i jego właściwości znajdują się w jednym
+			miejscu programu. W języku JavaScript, opis klasy jest dokonywany za pomocą pól (zmienne) i
+			metod(funkcje).
+			<h1><li>Omów następujące pojęcia ( w krótkiej formie): </li></h1>
+			
+			<ul type="disc">
+				<h4><li>Klasa </li></h4>
+					(ang. "class")<br />
+					Klasa rodzaj foremki, która opisuje nam jak będą wyglądać tworzone na jej podstawie nowe
+					obiekty. Klasa jest to złożony typ będący opisem (definicją) obiektu/obiektów wraz z definicją pól i
+					metod obiektów.
+					
+				<h4><li>Obiekt </li></h4>
+					(ang. "object")<br />
+					Instancja (byt, twór) który powstał na podstawie klasy. Czyli Obiekty są konstrukcjami
+					programistycznymi mającymi tak zwane właściwości (inaczej pola obiektu), którymi mogą być
+					zmienne lub inne obiekty. Z obiektami powiązane są funkcje wykonujące operacje na ich
+					właściwościach, nazywane metodami.
+
+				<h4><li>Właściwość </li></h4>
+					(ang. "property")<br />
+					Własność obiektu, np. kolor
+					
+				<h4><li>Metoda </li></h4>
+					(ang. "method")<br />
+					Zdolność (czynność) którą umie wykonywać obiekt, np. chodzenie (idź). Realizowane w postaci
+					konstrukcji podobnej do funkcji.
+					
+				<h4><li>Konstruktor </li></h4>
+					(ang. "constructor")<br />
+					Metoda wywoływana w momencie inicjalizacji obiektu. np. tworzymy obiekt a wraz z tworzeniem
+					obiektu uruchomi się metoda, która nada np. Imię i Nazwisko.
+				
+				<h4><li>Destruktor</li></h4>
+					(ang. "destructor") <br />
+					jest wywoływany automatycznie podczas niszczenia obiektów. Nie
+					przyjmuje żadnych argumentów. W przeciwieństwie do konstruktorów, w klasie może być tylko
+					jeden destruktor.
+					
+				<h4><li>Dziedziczenie </li></h4>
+					(ang. "inheritance")<br />
+					Klasa może dziedziczyć własności od innej klasy. Tworzymy klasę na podstawie innej klasy
+					pobierając od „rodzica” właściwości i metody, może dopisać nowe pola i nowe metody
+					
+				<h4><li>Hermetyzacja </li></h4>
+				(lub enkapsulacja - ang. "encapsulation") <br />
+				Wewnątrz ciała klasy znajdują się pola i metody. Część pól i metod można odpowiednio ukryć przed
+				"zewnętrznym światem" klasy tak jak to ma miejsce z przedmiotami ze świata rzeczywistego.
+				
+				<h4><li>Polimorfizm </li></h4>
+				(ang. "polymorphism") <br />
+				Polimorfizm czyli wielopastaciowość. Oznacza to, że dany obiekt może zmieniać swoją postać w
+				zależności od potrzeb. Może to być realizowane w formie metody wywoływanej z różną ilością
+				parametrów. Tak więc utorzony obiekt może być traktowany polimorficznie bo zachowuje się różnie
+				w zależności od sposobu uruchamiania jego metody.
+
+			</ul>
+			
+		</ol>
+	</body>
+	
+</html>

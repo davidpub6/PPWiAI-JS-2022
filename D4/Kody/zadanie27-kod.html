@@ -1,0 +1,31 @@
+<html>
+
+	<head>
+		<title></title>
+
+	</head>
+	
+	<body>
+		<textarea cols="50" rows="30"> 
+
+function zd27_pob() {
+				var komputer = {
+					marka: 'Lenovo',
+					system: 'Winodws 10 Home',
+					pojemnosc: '512GB',
+					komputer_wyswietl_poblocki: function ()
+					{
+					 document.write(this.marka + ' , ' + this.system + ' , ' + this.pojemnosc)
+					 }
+					}
+				komputer.komputer_wyswietl_poblocki();
+				
+				komputer.pamiec=8;
+				komputer.komputer_pokaz_poblocki=function() {alert('Pamiec: ' + this.pamiec + 'GB')}
+				komputer.komputer_pokaz_poblocki();
+
+				}
+
+		</textarea>
+	</body>
+</html>

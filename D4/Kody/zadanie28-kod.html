@@ -1,0 +1,33 @@
+<html>
+
+	<head>
+		<title></title>
+
+	</head>
+	
+	<body>
+		<textarea cols="50" rows="30"> 
+
+function zd28_pob() {
+				function komputer(marka_p,system_p,pojemnosc_p,pamiec_p) {
+					
+					this.marka=marka_p;
+					this.system=system_p;
+					this.pojemnosc=pojemnosc_p;
+					this.pamiec=pamiec_p;
+					}
+				komputer.prototype.wypisz_poblocki = function () {
+					 alert(this.marka + ', ' + this.system + ', ' + this.pojemnosc + ', ' + this.pamiec);
+					 };
+				var komputer1 = new komputer("Lenovo", "Winodws 10 Home", "512GB", "8");
+				var komputer2 = new komputer('Acer', 'Windows 11 Home', '128GB', '4');
+				komputer1.wypisz_poblocki();
+				komputer2.wypisz_poblocki();
+				document.write("dostęp do właściwości"+"<br>");
+				document.write("komputer pierwszy"+" "+komputer1.marka+" "+komputer1.system+" "+komputer1.pojemnosc+" "+komputer1.pamiec);
+				}
+				
+
+		</textarea>
+	</body>
+</html>
