@@ -308,11 +308,179 @@
 				// polskie litery mają działać(uzupełnij w kodzie strony)
 				}
 
-			function zd63_pob() {
-				function red(){ document.write("Red")}
-				function blue(){}
-
-				document.write("<h1 style=\"color: green;\"> MENU: </h1>\n\n");
-				document.write("<p style=\"red\" onclick=\"red()\"> 1 - Czerwony </p>");
-				document.write("<input type=\"button\" value=\"2 - Niebieski\" onclick=\"blue()\" />\n");
+			function zd64_pob() {
+				var x = parseInt(prompt("Podaj liczbę",""));
+				if (x % 2 == 0){
+					document.write("<p style=\"color: red; font-size: 3mm; \">" + x + " Jest liczbą parzystą" + "</p>");
 				}
+				else{ document.write("<p style=\"color: silver; font-size: 5mm; \">" + x + " Jest liczbą nieparzystą" + "</p>");}
+			}
+
+			function zd65_pob() {
+				var rok_pob = parseInt(prompt("Od kiedy JavaScript jest w użyciu.","Podaj rok"));
+				if(rok_pob == 1995) {document.write("<p style=\"color: blue; font-size: 4mm; \">Brawo znasz rok od kiedy działa Javasript </p>");}
+				else {document.write("<p style=\"color: red; font-size: 7mm; \">Źle musisz jeszcze poczytać </p>");}
+				document.write("Wczytany rok: " + rok_pob);
+			}
+
+			function zd66_pob() {
+				for(i=1;i<=10;i++) {
+					document.write("Wyświetlam "+i+" raz"+" Pobłocki"+"<br>");
+				}
+			}
+
+			function zd67_pob() {
+				for(i=1;i<=10;i++) {
+					if(i % 2 == 0) {
+						document.write("<p style=\"font-size:42px;\"> Wyświetlam "+i+" raz"+" Dawid"+"</p>");
+					}
+					else {
+						document.write("<p style=\"font-size:42px;\"> Wyświetlam "+i+" raz"+" Pobłocki"+"</p>");
+					}
+				}
+			}
+
+			function zd68_pob() {
+				var ilo_pob=parseInt(prompt("Podaj liczbe",""));
+				for(i=1;i<=10;i++) {
+					if(ilo_pob % 2 == 0) {
+						document.write("<p style=\"color: blue; font-size:42px;\"> Wyświetlam "+i+" raz"+" Pobłocki"+"</p>");
+					}
+					else {
+						document.write("<p style=\"color: green; font-size:42px;\"> Wyświetlam "+i+" raz"+" Dawid"+"</p>");
+					}
+				}
+			}
+
+			function zd69_pob() {
+				for ( var i=1; i<=10; i++) {
+					for ( var k=1; k<=i; k++) {
+						document.write("&nbsp");
+				 	}
+					document.write(i+"<br>");
+				}
+			}
+
+			function zd70_pob() {
+				var ile_raz = parseInt(prompt("Ile razy powotórzyć:",""));
+				var inc = prompt("Podaj twoje inicjały","");
+				for ( var i=1; i<=ile_raz; i++) {
+					for ( var k=1; k<=i; k++) {
+						for (var j=1; j<=10; j++) {
+							document.write("&nbsp");
+						}
+				 	}
+					document.write(i+"_"+inc+"_"+i+"<br>");
+				}
+			}
+
+			function zd71_pob() {
+				var a_pob=5;
+				var b_pob=25;
+				var i,j;
+
+				for (i=1; i<=b_pob;i++){
+					document.write("*");
+				}
+
+				for (i=1; i<=(a_pob-2);i++){
+					document.write("<br>"+"*");
+
+					for(j=1;j<=(b_pob-2);j++){
+						document.write("&nbsp&nbsp");
+					}
+
+					document.write("*");
+				}
+
+				document.write("<br>");
+
+				for (i=1; i<=b_pob;i++){
+					document.write("*");
+				}
+				
+			}
+
+			function zd72_pob() {
+				var a_pob=parseInt(prompt("Podaj liczbe wierszy:",""));
+				var b_pob=parseInt(prompt("Podaj liczbe kolumn:",""));
+				var i,j;
+
+				for (i=1; i<=b_pob;i++){
+					document.write("*");
+				}
+
+				for (i=1; i<=(a_pob-2);i++){
+					document.write("<br>"+"*");
+
+					for(j=1;j<=(b_pob-2);j++){
+						document.write("&nbsp&nbsp");
+					}
+
+					document.write("*");
+				}
+
+				document.write("<br>");
+
+				for (i=1; i<=b_pob;i++){
+					document.write("*");
+				}
+				
+			}
+
+			function zd73_pob() {
+				var a_pob=parseInt(((prompt("Podaj nazwisko:","").length)%4)+5);
+				var b_pob=parseInt(((prompt("Podaj imie:","").length)%6)+20);
+				var i,j;
+
+				for (i=1; i<=b_pob;i++){
+					document.write("*");
+				}
+
+				for (i=1; i<=(a_pob-2);i++){
+					document.write("<br>"+"*");
+
+					for(j=1;j<=(b_pob-2);j++){
+						document.write("&nbsp&nbsp");
+					}
+
+					document.write("*");
+				}
+
+				document.write("<br>");
+
+				for (i=1; i<=b_pob;i++){
+					document.write("*");
+				}
+				
+			}
+
+			function zd74_pob() {
+				var l1_t_pob=parseInt(prompt("Podaj liczbe a (z przedzialu <20;60>):",""));
+				var l2_t_pob=parseInt(prompt("Podaj liczbe b (z przedzialu <20;60>):",""));
+				var pocz_pob=parseInt(prompt("Podaj liczbe poczatkowa:",""));
+				var tekst_pob=prompt("Podaj tekst:","");
+
+				if (l1_t_pob < 20 || l1_t_pob > 60){
+					document.write("liczba a nie nalezy do przedzialu <20;60>");
+				}
+
+				else if (l2_t_pob < 20 || l2_t_pob > 60){
+					document.write("liczba b nie nalezy do przedzialu <20;60>");
+				}
+
+				else {
+					if (l1_t_pob < l2_t_pob){
+						for (var i=pocz_pob;i<=100;i+=5){
+							document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_pob+"<br></p>");
+						}
+					}
+
+					else if (l2_t_pob < l1_t_pob){
+						for (var i=pocz_pob;i>=0;i-=5){
+							document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_pob+"<br></p>");
+						}
+					}
+				}
+				
+			}
