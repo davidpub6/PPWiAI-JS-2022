@@ -484,3 +484,98 @@
 				}
 				
 			}
+
+			function punkty_kratowe () {
+				var R_pob=parseInt(prompt("Podaj R :",""));
+				var licznik_pob=0;
+				for ( var i=R_pob; i>=-R_pob; i--)
+				{
+					for ( var k=-R_pob; k<=R_pob; k++)
+					{
+						document.write("("+i+","+k+")"+"&nbsp;&nbsp;");
+						licznik_pob++;
+					}
+					document.write("<br>");
+				}
+				document.write("Licznik :"+licznik_pob);
+			}
+
+			function zd79_pob () {
+				var R_pob=prompt("Podaj R :","");
+				var licznik_pob=0;
+				var r_pob;
+				for ( var i=Math.round(R_pob)+1; i>=-Math.round(R_pob)-1; i--)
+				{
+					for ( var k=-Math.round(R_pob)-1; k<=Math.round(R_pob)+1; k++)
+					{
+						r_pob=Math.sqrt((i*i)+(k*k));
+
+						if (r_pob <= R_pob){
+							licznik_pob++;
+						}
+					}
+				}
+				document.write("Licznik :"+licznik_pob);
+			}
+
+			function zd75_pob () {
+				var w;
+				for ( var i=0; i<=39; i++) {
+					w=i*i+i+41;
+					document.write("w("+i+")="+w+"<br>");
+					if (i%5==0) {
+						if (confirm("Continue?") == false) {
+							break;
+						}
+					}
+				}
+			}
+
+			function zd76_pob () {
+				var x_pob, x2_pob, x4_pob;
+				for ( var i=24; i<=39; i++) {
+					x_pob=i;
+					x2_pob=Math.sqrt(x_pob);
+					x4_pob=Math.sqrt(x2_pob);
+					document.write("x = "+x_pob+"  x(2) = "+x2_pob+"  x(4) = "+x4_pob+"<br>");
+					if (i%3==0) {
+						if (confirm("Continue?") == false) {
+							break;
+						}
+					}
+				}
+			}
+
+			function zd77_pob () {
+				var x_pob=parseInt(prompt("Podaj do ktorej",""));
+				for ( var i=2; i<=x_pob; i++) {
+					if (i%2==0) {
+						document.write(i+"<br>");
+					}
+				}
+			}
+
+			function zd78_pob () {
+				var x1_pob=parseInt(prompt("Podaj liczbe 1",""));
+				var x2_pob=parseInt(prompt("Podaj liczbe 2",""));
+
+				if (x1_pob < x2_pob) {
+					for ( var i=x1_pob; i<=x2_pob; i++) {
+						if (i%2!=0) {
+							document.write("<p style=\"color: green;\">"+i+"</p>");
+						}
+					}
+				}
+
+				if (x1_pob > x2_pob) {
+					for ( var i=x1_pob; i>=x2_pob; i--) {
+						if (i%2!=0) {
+							document.write("<p style=\"color: blue;\">"+i+"</p>");
+						}
+					}
+				}
+
+				if (x1_pob == x2_pob) {
+					confirm("Brak obliczeń");
+				}
+			}
