@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Canvas</title>
+        <script type="text/javascript">
+            function draw() {
+                var rysowanie = document.getElementById('obrazek');
+                var rodzaj = rysowanie.getContext('2d');
+
+                rodzaj.fillStyle = 'yellow';
+                rodzaj.fillRect(0, 0, 100, 100);
+                rodzaj.strokeRect(0, 0, 100, 100);
+                rodzaj.fillStyle = 'red';
+                rodzaj.fillRect(30, 30, 30, 30);
+
+                rodzaj.beginPath();
+                rodzaj.moveTo(260,371);
+                rodzaj.lineTo(310,321);
+                rodzaj.lineTo(360,371);
+                rodzaj.lineTo(310,421);
+                rodzaj.lineTo(260,371);
+                rodzaj.fillStyle = 'green';
+                rodzaj.fill();
+
+                
+
+                /*
+                    rodzaj.beginPath();
+                    rodzaj.moveTo(50,50); 
+                    rodzaj.lineTo(100,0); 
+                    rodzaj.lineTo(150,50); 
+                    rodzaj.lineTo(100,100); 
+                    rodzaj.lineTo(50,50); 
+                    rodzaj.fillStyle = 'green';
+                    rodzaj.fill();
+
+                    50+210 = 260 ; 50+321 = 371
+                    100+210 = 310 ; 0+321 = 321
+                    150+210 = 360 ; 50+321 = 371
+                    310-100 = 210 ; 421-100 = 321
+                    50+210 = 260 ; 50+321 = 371
+                */
+            }
+
+        </script>
+    </head>
+    <body onload="draw();">
+        <canvas id="obrazek" width="1000" height="1000">
+            Twoja przeglądarka nie wspiera Canvas!
+            Zainstaluj Internet Explorer 9.x
+        </canvas>
+    </body>
+</html>

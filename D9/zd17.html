@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<title>Canvas</title>
+		<script type="text/javascript">
+			function rysuj() {
+				var rysowanie = document.getElementById('obrazek');
+				var rodzaj = rysowanie.getContext('2d');
+
+				// listek 1 //
+				rodzaj.beginPath();
+				rodzaj.moveTo(50,280);
+				rodzaj.quadraticCurveTo(5,120,180,280);
+				rodzaj.fillStyle = 'green';
+				rodzaj.fill();
+
+				rodzaj.beginPath();
+				rodzaj.moveTo(50,280);
+				rodzaj.quadraticCurveTo(5,440,180,280);
+				rodzaj.fillStyle = 'green';
+				rodzaj.fill();
+
+				// listek 2 //
+				rodzaj.beginPath();
+				rodzaj.moveTo(310,280);
+				rodzaj.quadraticCurveTo(355,120,180,280);
+				rodzaj.fillStyle = 'green';
+				rodzaj.fill();
+
+				rodzaj.beginPath();
+				rodzaj.moveTo(310,280);
+				rodzaj.quadraticCurveTo(355,440,180,280);
+				rodzaj.fillStyle = 'green';
+				rodzaj.fill();
+
+				// listek 3 //
+				rodzaj.beginPath();
+				rodzaj.moveTo(180,150);
+				rodzaj.quadraticCurveTo(20,105,180,280);
+				rodzaj.fillStyle = 'green';
+				rodzaj.fill();
+
+				rodzaj.beginPath();
+				rodzaj.moveTo(180,150);
+				rodzaj.quadraticCurveTo(340,105,180,280);
+				rodzaj.fillStyle = 'green';
+				rodzaj.fill();
+
+				// listek 4 //
+				rodzaj.beginPath();
+				rodzaj.moveTo(180,410);
+				rodzaj.quadraticCurveTo(20,455,180,280);
+				rodzaj.fillStyle = 'green';
+				rodzaj.fill();
+
+				rodzaj.beginPath();
+				rodzaj.moveTo(180,410);
+				rodzaj.quadraticCurveTo(340,455,180,280);
+				rodzaj.fillStyle = 'green';
+				rodzaj.fill();
+
+			}
+		</script>
+	</head>
+	<body onload="rysuj();">
+		<canvas id="obrazek" width="900" height="900">
+			Twoja przeglądarka nie wspiera Canvas!
+			Zainstaluj Internet Explorer 9.x
+		</canvas>
+	</body>
+</html>

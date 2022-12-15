@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<title>Animacja w Canvas</title>
+		<script type="text/javascript">
+			var canvas 
+			var rodzaj;
+
+			var x = 200;
+			var y = 20;
+			var dy = 10; 
+			var kolory = new 
+			Array("blue","red","yellow","green");
+			var i = 0;
+
+
+			function draw(){
+				canvas = document.getElementById('image1');
+				rodzaj = canvas.getContext('2d');
+
+				setInterval(anim, 100);
+			}
+			function anim() {
+				rodzaj.clearRect(0, 0, canvas.width, canvas.height);
+
+				y += dy;
+
+				if (y > (canvas.height-20)) {
+					dy = -10;
+					i = ++i % kolory.length;
+
+				}
+
+				if (y < 20) {
+					dy = 10;
+					i = ++i % kolory.length;
+
+				}
+
+				rodzaj.beginPath();
+				rodzaj.fillStyle = kolory[i];
+				rodzaj.arc(x, y, 20, 0, Math.PI * 2, true);
+				rodzaj.closePath;
+				rodzaj.fill();
+
+			}
+		</script>
+		<style type="text/css">
+			canvas { border: 1px solid blue; }
+		</style>
+	</head>
+	<body onload="draw();">
+		<canvas id="image1" width="400" height="400">
+		Twoja przeglądarka nie wspiera elementu canvas!
+		Pobierz Internet Explorer 9 lub nowszą wersję! 
+		</canvas>
+	</body>
+</html>
