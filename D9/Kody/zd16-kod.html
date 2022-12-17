@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title></title>
+	</head>
+	
+	<body>
+		<!--Textarea-->
+		<textarea cols="150" rows="60" readonly> 
+
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Canvas</title>
+        <script type="text/javascript">
+            function rysuj() {
+                var rysowanie = document.getElementById('obrazek');
+                var rodzaj = rysowanie.getContext('2d');
+
+                rodzaj.beginPath();
+                rodzaj.arc(100,75,30,Math.PI,-Math.PI,false);
+                rodzaj.closePath();
+                rodzaj.lineWidth = 10;
+                rodzaj.strokeStyle = "blue";
+                rodzaj.stroke();
+
+                rodzaj.beginPath();
+                rodzaj.arc(135,100,30,Math.PI,-Math.PI,false);
+                rodzaj.closePath();
+                rodzaj.lineWidth = 10;
+                rodzaj.strokeStyle = "yellow";
+                rodzaj.stroke();
+
+                rodzaj.beginPath();
+                rodzaj.arc(170,75,30,Math.PI,-Math.PI,false);
+                rodzaj.closePath();
+                rodzaj.lineWidth = 10;
+                rodzaj.strokeStyle = "black";
+                rodzaj.stroke();
+
+                rodzaj.beginPath();
+                rodzaj.arc(205,100,30,Math.PI,-Math.PI,false);
+                rodzaj.closePath();
+                rodzaj.lineWidth = 10;
+                rodzaj.strokeStyle = "green";
+                rodzaj.stroke();
+
+
+
+                rodzaj.beginPath();
+                rodzaj.arc(240,75,30,Math.PI,-Math.PI,false);
+                rodzaj.closePath();
+                rodzaj.lineWidth = 10;
+                rodzaj.strokeStyle = "red";
+                rodzaj.stroke();
+
+            }
+        </script>
+    </head>
+    
+    <body onload="rysuj();">
+        <canvas id="obrazek" width="900" height="900">
+            Twoja przeglądarka nie wspiera Canvas!
+            Zainstaluj Internet Explorer 9.x
+        </canvas>
+    </body>
+</html>
+
+		</textarea>
+		<!--Koniec textarea-->
+	</body>
+	
+</html>
